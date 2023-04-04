@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<! -- meta -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<! -- Title -->
+	<title>Kyrios</title>
+
+	<! -- FanIcon Link -->
+	<link rel="icon" type="image/x-icon" href="Pictures/fanicon.png">
+
+	<! -- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+
+    <! -- Icons -->
+	<link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link href="http://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
+
+	<! -- Script -->
+	<script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+
+	<! -- Style -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style type="text/css">
+	.circle-sketch-highlight
+	{
+  	position:relative;
+    background: none;
+  	color: #333333;
+  }
+	.circle-sketch-highlight:before
+	{
+  	content:"";
+  	z-index:-1;
+  	left:-0.5em;
+  	top:-0.1em;
+  	border-width:2px;
+  	border-style:solid;
+  	border-color: #021DF3;
+  	position:absolute;
+  	border-right-color:transparent;
+  	width:100%;
+  	height:1em;
+  	transform:rotate(2deg);
+  	opacity:0.7;
+  	border-radius:50%;
+  	padding:0.1em 0.25em;
+	}
+	.circle-sketch-highlight:after{
+  	content:"";
+  	z-index:-1;
+  	left:-0.5em;
+  	top:0.1em;
+  	padding:0.1em 0.25em;
+  	border-width:2px;
+  	border-style:solid;
+ 	 	border-color:#021DF3;;
+ 	 	border-left-color:transparent;
+  	border-top-color:transparent;
+ 	 	position:absolute;
+  	width:100%;
+  	height:1em;
+  	transform:rotate(-1deg);
+  	opacity:0.7;
+ 		border-radius:50%;
+	}
+  .services_container
+  {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+   place-items: center;
+  }
+  .row 
+  {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .column 
+  {
+    width: 100%;
+    padding: 0 1em 1em 1em;
+    text-align: center;
+  }
+  .card 
+  {
+    width: 100%;
+    height: 100%;
+    padding: 2em 1.5em;
+    background: linear-gradient(#ffffff 50%, #021DF3 50%);
+    background-size: 100% 200%;
+    background-position: 0 2.5%;
+    border-radius: 5px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+ .row h3 
+  {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1f194c;
+    margin: 1em 0;
+  }
+ .row p {
+  color: #575a7b;
+  font-size: 10px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+}
+.icon-wrapper 
+{
+  background-color: #021DF3;
+  position: relative;
+  margin: auto;
+  font-size: 30px;
+  height: 2.5em;
+  width: 2.5em;
+  color: #ffffff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: 0.5s;
+}
+.card:hover {
+  background-position: 0 100%;
+}
+.card:hover .icon-wrapper {
+  background-color: #ffffff;
+  color: #2c7bfe;
+}
+.card:hover h3 {
+  color: #ffffff;
+}
+.card:hover p {
+  color: #f0f0f0;
+}
+@media screen and (min-width: 768px) {
+  section {
+    padding: 0 2em;
+  }
+  .column {
+    flex: 0 50%;
+    max-width: 50%;
+  }
+}
+@media screen and (min-width: 992px) {
+  section {
+    padding: 1em 3em;
+  }
+  .column {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+  .new span{
+    display: block;
+  font-weight: var(--font-semi-bold);
+  margin-bottom: var(--mb-1);
+  font-size: 10px;
+  line-height: 40px;
+  letter-spacing: 0.3em;
+  background: rgba(254, 201, 0, 0.08);
+  border-radius: 10px;
+  width: 140px;
+  height: 40px;
+ background: rgba(118, 131, 241, 0.24);
+  border-radius: 10px;
+  color: #FEC900;
+  text-align: center;
+  }
+}
+ 
+</style>
+
+</head>
+<body>
+
+    <! --Scroll -->
+    <a href="#" class="scrolltop" id="scroll-top">
+        <i class='bx bx-chevron-up scrolltop__icon'></i>
+    </a>
+
+    <! --Navigation -->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <img src="Pictures/kyrioslogo.png" class="logo_img">
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item" id="ey"><a href="#home" class="nav__link" >Home</a></li>
+                    <li class="nav__item" id="ey"> <a href="#about" class="nav__link">About Us</a></li>
+                    <li class="nav__item" id="ey"><a href="#team" class="nav__link">Team</a></li>
+                    <li class="nav__item" id="ey"><a href="#services" class="nav__link">Services</a></li>
+                    <li class="nav__item" id="ey"><a href="#foot" class="nav__link">Contact</a></li>
+                    <li class="nav__item" ><a href="#modalWindowExit" id="talk">Let's Talk</a></li>
+                    <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                </ul>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+  <main  class="l-main" >
+    <! -- Products -->
+    <section class="services_container section bd-container">
+      <div class="SERVICE-TITLE-PAGE new">
+        <center>
+          <span class="section-team" style="color:#021DF3;">SERVICES</span>
+          <h2 class="title-home-team">What We Can Do For You</h2>
+          <p class="content-home feautre-parag">Here at Kyrios, we provide the most qualified services for organizations, making them capable of what the world offers in the modern technological era. Bringing advanced solutions for the world's current problems.</p>
+        </center>
+        <br> <br> <br>
+      </div>
+
+      <div class="row">     
+      </div>
+        <div class="row">
+          <div class="column">
+            <div class="card">
+              <div class="icon-wrapper">
+              </div>
+              <h3>Training and Development</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam consequatur necessitatibus eaque.</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="icon-wrapper">
+              </div>
+              <h3>Software and Information Technology</h3>
+              <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+              consequatur necessitatibus eaque.</p>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card">
+              <div class="icon-wrapper">
+              </div>
+            <h3>Computer and Supplies</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+              consequatur necessitatibus eaque.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+           
+            </div>
+            <h3>Consulting Services</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+              consequatur necessitatibus eaque.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+             
+            </div>
+            <h3>Project Management</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+              consequatur necessitatibus eaque.
+            </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="icon-wrapper">
+            
+            </div>
+            <h3>Service Heading</h3>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
+              consequatur necessitatibus eaque.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>     
+  </main>
+
+  <! -- Main Section -->
+    <main  class="l-main" >
+    <br>
+      <! -- teachmint -->
+      <section class="vision section bd-container">
+        <div class="vision__container  bd-grid">
+          <div class="vision__data">
+            <p>Teachmint</p>
+            <h2 class="section-title about__initial" style="line-height: 30px;">Unlocking the potential of education providers through cutting-edge technology</h2>
+            <p class="about__description">Teachmint is a leading provider of education-infrastructure solutions, powering the education ecosystem to deliver inspired learning outcomes. Since inception, we have enabled millions of educators to create global, future-ready classrooms with our proprietary classroom technology. With our innovative and powerful SaaS solutions, Teachmint today is catering to end-to-end needs of all education providers from K-12 schools to after-school tutoring, universities, creators and even edtechs.</p>
+          </div>
+            
+          <div class="w3-content w3-section" style="max-width:500px">
+            <img class="mySlides" src="picture/teachmint-attendance.png">
+            <img class="mySlides"  src="picture/teachmint-calendar.png">
+            <img class="mySlides"  src="picture/teachmint-classroom.png" >
+            <img class="mySlides"  src="picture/teachmint-fee.png" >
+            <img class="mySlides"  src="picture/teachmint-roles.png" >
+          </div>
+        </div>
+      </section>
+
+      <! -- Mission  -->
+      <section class="mission section  bd-container">
+        <div class="mission__container bd-grid">
+          <div class="mission__data">
+            <p>Cue</p>
+            <h2 class="section-title about__initial" style="line-height: 30px;">Simplified for success.</h2>
+            <p class="about__description">Empowering your call center begins with removing the obstacles and distractions associated with onboarding, training, and general call mechanics.</p>
+          </div>
+          <div class="w3-content w3-section cue" style="max-width:500px">
+            <img class="mySlides-cue" src="picture/cue1.jpg" style="width:100%">
+            <img class="mySlides-cue"  src="picture/cue2.png"style="width:100%">
+            <img class="mySlides-cue"  src="picture/cue3.jpg" style="width:100%">
+            <img class="mySlides-cue"  src="picture/cue4.png" style="width:100%">
+            <img class="mySlides-cue"  src="picture/cue5.jpg" style="width:100%">
+          </div>            
+        </div>
+      </section>
+
+    </main>
+
+
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+
+<script>
+var myIndex = 0;
+slide();
+
+function slide() {
+  var a;
+  var b = document.getElementsByClassName("mySlides-cue");
+  for (a = 0; a < b.length; a++) {
+    b[a].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > b.length) {myIndex = 1}    
+  b[myIndex-1].style.display = "block";  
+  setTimeout(slide, 2000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+</html>
